@@ -2,16 +2,18 @@
 #Create a separate function for asking the user for prices.
 
 def prices():
-	price_list = []
-	user = input("input a price one at a time:")
-	price_list.append(user)
-	while user != "no":
-		return user
-		continue
-		if user==no:
-			break
+	price_list = [] #create empty list
+	
+	while True: #infinite loop
+		user = input("input a price one at a time:")
+		if user=="no":
+			break # stops the loop
+		else:
+			price_list.append(user) # appends input to list
 		
 	print (price_list)
+
+prices()
 
 
 #In that function, only ask for one price at a time.
