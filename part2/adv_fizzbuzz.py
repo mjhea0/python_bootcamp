@@ -1,22 +1,19 @@
 # print numbers from 1 to 100
+def fizzbuzz(upper_limit):
+    for num in range(1, upper_limit+1):
 
-def fizzbuzz(x):
+        if (num % 3 == 0 and num % 5 == 0):
+            print("FizzBuzz")
 
-    for num in range(1,x+1):
-    	list=[]
-        if (num%3==0 and num%5==0):
-    	    return "FizzBuzz"
-    	    list.append("FizzBuzz")
-        elif num%5==0:
-        	return "Buzz"
-            list.append("Buzz")
-        elif num%3==0:
-        	return "Fizz"
-            list.append("Fizz")
-        else:        	
-            return num
-            list.append(num)
+        elif num % 5 == 0:
+            print("Buzz")
 
-fizzbuzz(35)
+        elif num % 3 == 0:
+            print("Fizz")
+        else:
+            print(num)    
+
+print(fizzbuzz(100))
 
 
+if __name__ == '__main__':
